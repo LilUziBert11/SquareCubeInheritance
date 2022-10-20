@@ -22,7 +22,7 @@ public class Cube extends Square {
 
     //method to calculate surface area and volume
     public Double computeSurfaceArea(){
-        surfaceArea=length*width*6;
+        surfaceArea=(2*(width*depth)+2*(length*depth)+2*(width*length));
         return surfaceArea;
     }
     public Double computeVolume(){

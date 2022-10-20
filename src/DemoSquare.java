@@ -9,8 +9,31 @@ import java.util.Scanner;
 
 public class DemoSquare {
     public static void main(String[] args){
-        Square s = new Square(3, 4);
-        Cube c = new Cube(6, 7, 8);
+        //Declaring new scanner class
+        Scanner sc = new java.util.Scanner(System.in);
+
+        //Asking the user for the length of the square
+        System.out.println("What is the length of the square?");
+        double length = sc.nextDouble();
+
+        //Asking the user for the width of the square
+        System.out.println("What is the width of the square?");
+        double width = sc.nextDouble();
+
+        //Asking the user for the length of the cube
+        System.out.println("What is the length of the cube?");
+        double cLength = sc.nextDouble();
+
+        //Asking the user for the width of the cube
+        System.out.println("What is the width of the cube?");
+        double cWidth = sc.nextDouble();
+
+        //Asking the user for the depth of the cube
+        System.out.println("What is the depth of the cube?");
+        double depth = sc.nextDouble();
+
+        Square s = new Square(length, width);
+        Cube c = new Cube(cLength, cWidth, depth);
 
         System.out.format("The surface area of the square is:  %.2f\r\n", s.computeSurfaceArea());
         System.out.format("The surface area of the cube is:  %.2f\r\n", c.computeSurfaceArea());
